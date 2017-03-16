@@ -71,6 +71,7 @@ use application# 1
 ```
 *at use application# enter 1 Its a Files  (nautilus-folder-handler)*
 
+------
 
 **MUSIC**
 
@@ -90,6 +91,7 @@ sudo apt-get update
 sudo apt-get install spotify-client
 
 ```
+------
 
 **SOCIAL MEDIA**
 
@@ -100,6 +102,8 @@ https://slack.com/downloads/linux
 **Telegram Desktop**
 
 https://desktop.telegram.org/
+
+------
 
 **OFFICES**
 
@@ -115,6 +119,8 @@ sudo apt-get autoremove
 i'm used WPS Offices
 
 http://wps-community.org/downloads
+
+------
 
 ### WebDev Apps
 
@@ -194,5 +200,91 @@ Run `./install.sh`
 
 References : https://github.com/agnoster/agnoster-zsh-theme
 
+------
 
 >**NVM** - Node Version Manager - Simple bash script to manage multiple active node.js versions
+
+References : https://github.com/creationix/nvm
+
+**Install NVM**
+
+`wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash`
+
+**Verify installation**
+
+`command -v nvm`
+
+**Manual Upgrade**
+
+For manual upgrade with `git` (requires git v1.7+):
+
+1. change to the `$NVM_DIR`
+1. pull down the latest changes
+1. check out the latest version
+1. activate the new version
+
+```sh
+(
+  cd "$NVM_DIR"
+  git fetch origin
+  git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
+) && . "$NVM_DIR/nvm.sh"
+```
+
+**Usage**
+
+To download, compile, and install the latest release of node, do this:
+
+```sh
+nvm install node
+```
+
+And then in any new shell just use the installed version:
+
+```sh
+nvm use node
+```
+
+Or you can just run it:
+
+```sh
+nvm run node --version
+```
+Or, you can run any arbitrary command in a subshell with the desired version of node:
+
+```sh
+nvm exec 4.2 node --version
+```
+
+You can also get the path to the executable to where it was installed:
+
+```sh
+nvm which 5.0
+```
+
+In place of a version pointer like "0.10" or "5.0" or "4.2.1", you can use the following special default aliases with `nvm install`, `nvm use`, `nvm run`, `nvm exec`, `nvm which`, etc:
+
+ - `node`: this installs the latest version of [`node`](https://nodejs.org/en/)
+ - `iojs`: this installs the latest version of [`io.js`](https://iojs.org/en/)
+ - `stable`: this alias is deprecated, and only truly applies to `node` `v0.12` and earlier. Currently, this is an alias for `node`.
+ - `unstable`: this alias points to `node` `v0.11` - the last "unstable" node release, since post-1.0, all node versions are stable. (in semver, versions communicate breakage, not stability).
+
+------
+
+**SQLite**
+
+`sudo apt-get install sqlite3`
+
+`sudo apt-get install sqlitebrowser`
+
+**PostgreSql**
+
+`sudo apt-get install postgresql`
+
+**pgAdmin III available on software center**
+
+pgAdmin III is a database design and management application for use with PostgreSQL. The application can be used to manage PostgreSQL 7.3 and above running on any platform.
+
+**FileZilla**
+
+`sudo apt-get install filezilla`
