@@ -12,15 +12,17 @@ Repository for help me installing some important tools on my laptop, based on Te
 
 `setting --> appearance --> Arc-Darker`
 
-**[used themes]**
+> **Note:** Do With Your Own Risk
+
+>**[used themes]**
 [macOS-Sierra](https://github.com/B00merang-Project/macOS-Sierra)
 
-**[used icons]**
+>**[used icons]**
 [la-capitaine-icon-theme](https://github.com/keeferrourke/la-capitaine-icon-theme)
 
-`cp -r` copy directory along the entire file contents
+>`cp -r` copy directory along the entire file contents
 
-change the background (oke.png its my background filename) :
+>change the background (oke.png its my background filename) :
 `sudo cp /home/bambang/Pictures/Wallpapers/oke.png /usr/share/xfce4/backdrops/`
 
 **Dock**
@@ -66,7 +68,7 @@ Please choose a default application for files of type inode/directory
 use application# 1
 
 ```
-at use application# **enter 1 *Its a Files  (nautilus-folder-handler)**
+*at use application# enter 1 Its a Files  (nautilus-folder-handler)*
 
 
 **MUSIC**
@@ -87,3 +89,26 @@ sudo apt-get update
 sudo apt-get install spotify-client
 
 ```
+
+**SLACK Desktop**
+
+https://slack.com/downloads/linux
+
+**Telegram Desktop**
+
+https://desktop.telegram.org/
+
+**Office**
+
+The default apps offices in TeaLinuxOS LibreOffices but i dont like this, So I'm Uninstall it.
+
+```
+sudo apt-get remove --purge libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+
+```
+
+i'm used WPS Offices
+
+http://wps-community.org/downloads
