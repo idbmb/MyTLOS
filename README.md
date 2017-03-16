@@ -36,6 +36,16 @@ remove the line above dock (cairo-dock)
 
 **uncheck :** *Show shadows under dock windows*
 
+**Auto Start on startup**
+
+Settings --> Session and startup --> Application Autostart --> (+) Add
+
+```
+Name: Cairo Dock Start
+Description : Autostart cairo-dock
+Command: cairo-dock &
+```
+
 ------
 
 ### Application
