@@ -91,7 +91,9 @@ sudo apt-get install spotify-client
 
 ```
 
-**SLACK Desktop**
+**SOCIAL MEDIA**
+
+**Slack Desktop**
 
 https://slack.com/downloads/linux
 
@@ -99,7 +101,7 @@ https://slack.com/downloads/linux
 
 https://desktop.telegram.org/
 
-**Office**
+**OFFICES**
 
 The default apps offices in TeaLinuxOS LibreOffices but i dont like this, So I'm Uninstall it.
 
@@ -113,3 +115,84 @@ sudo apt-get autoremove
 i'm used WPS Offices
 
 http://wps-community.org/downloads
+
+### WebDev Apps
+
+>**ATOM** - A hackable text editor for the 21st Century
+
+https://atom.io/
+
+**Packages for Atom**
+
+- open-terminal-here
+- terminal-plus
+- minimap
+- logo-file-icons
+
+>**ZSH** - Zsh is a shell designed for interactive use, although it is also a powerful scripting language. More information can be found on the "Zsh Web Pages" sites.
+
+`apt install zsh`
+
+`sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+
+References : https://github.com/robbyrussell/oh-my-zsh
+
+Change your default shell
+
+`chsh -s /bin/zsh`
+
+manual update
+
+`upgrade_oh_my_zsh`
+
+Magic!
+
+Themes Agnoster
+
+References : https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
+
+**Powerline installation**
+
+`sudo apt-get install python-pip`
+
+`pip -V`
+
+References : https://powerline.readthedocs.io/en/latest/installation/linux.html#font-installation
+
+`pip install powerline-status`
+
+`pip install --user git+git://github.com/powerline/powerline`
+
+`pip install --user --editable={path_to_powerline}`
+
+`ln -s {path_to_powerline}/scripts/powerline ~/.local/bin`
+
+**Fonts installation**
+
+`wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf`
+
+`wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf`
+
+`sudo mkdir ~/.fonts/`
+
+`mv PowerlineSymbols.otf ~/.fonts/`
+
+`fc-cache -vf ~/.fonts/`
+
+`sudo mkdir ~/.config/fontconfig/conf.d/`
+if error create directory manual.
+
+`mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/`
+
+References : https://github.com/powerline/fonts
+
+`git clone https://github.com/powerline/fonts.git`
+
+`cd fonts`
+
+Run `./install.sh`
+
+References : https://github.com/agnoster/agnoster-zsh-theme
+
+
+>**NVM** - Node Version Manager - Simple bash script to manage multiple active node.js versions
