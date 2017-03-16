@@ -12,18 +12,19 @@ Repository for help me installing some important tools on my laptop, based on Te
 
 `setting --> appearance --> Arc-Darker`
 
-> **Note:** Do With Your Own Risk
-
+> **Note :** *Do With Your Own Risk*
+>
 >**[used themes]**
 [macOS-Sierra](https://github.com/B00merang-Project/macOS-Sierra)
-
+>
 >**[used icons]**
 [la-capitaine-icon-theme](https://github.com/keeferrourke/la-capitaine-icon-theme)
-
+>
 >`cp -r` copy directory along the entire file contents
-
+>
 >change the background (oke.png its my background filename) :
-`sudo cp /home/bambang/Pictures/Wallpapers/oke.png /usr/share/xfce4/backdrops/`
+>
+>`sudo cp /home/bambang/Pictures/Wallpapers/oke.png /usr/share/xfce4/backdrops/`
 
 **Dock**
 
