@@ -141,9 +141,13 @@ https://atom.io/
 **Packages for Atom**
 
 - open-terminal-here
-- terminal-plus
+- terminal-fusion
 - minimap
 - logo-file-icons
+
+```
+bambang@idbmb  ~/fonts/DejaVuSansMono   master ●  sudo mv DejaVu\ Sans\ Mono\ for\ Powerline.ttf /home/bambang/.fonts/
+```
 
 >**ZSH** - Zsh is a shell designed for interactive use, although it is also a powerful scripting language. More information can be found on the "Zsh Web Pages" sites.
 
