@@ -302,3 +302,11 @@ pgAdmin III is a database design and management application for use with Postgre
 **FileZilla**
 
 `sudo apt-get install filezilla`
+
+### Troubleshooting
+
+**If Touchpad not work normal**
+
+`sudo modprobe -r psmouse`
+
+`sudo modprobe psmouse proto=imps`
