@@ -11,7 +11,7 @@ Please let me know if it works for you or if it fails.
 
 ### Prerequisites
 
-__Disclaimer:__ _GimpLikePhotoshop supports Windows, but works best on OS X and Linux._
+__Disclaimer:__ _Gimp Like Photoshop supports Windows, but works best on OS X and Linux._
 
 * Gimp `2.8`
 * `git` should be installed
@@ -23,13 +23,13 @@ GimpLikePhotoshop is installed by running one of the following commands in your 
 #### via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/idbmb/MyTLOS/GimpLikePhotoshop/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/idbmb/MyTLOS/master/GimpLikePhotoshop/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-sh -c "$(wget https://raw.githubusercontent.com/idbmb/MyTLOS/GimpLikePhotoshop/master/tools/install.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/idbmb/MyTLOS/master/GimpLikePhotoshop/tools/install.sh -O -)"
 ```
 
 ### Mac installation
@@ -37,7 +37,7 @@ sh -c "$(wget https://raw.githubusercontent.com/idbmb/MyTLOS/GimpLikePhotoshop/m
 	# exit gimp first
 	cd $HOME/Library/Application\ Support/GIMP
 	mv 2.8 2.8.backup
-	git clone --depth=1 https://github.com/idbmb/MyTLOS/GimpLikePhotoshop.git 2.8
+	git clone --depth=1 https://github.com/idbmb/MyTLOS.git 2.8
 
 ### Windows installation
 
@@ -46,11 +46,11 @@ sh -c "$(wget https://raw.githubusercontent.com/idbmb/MyTLOS/GimpLikePhotoshop/m
 	# exit gimp first
 	cd $Env:UserProfile
 	mv .gimp-2.8 .gimp-2.8.backup
-	git clone --depth=1 https://github.com/idbmb/MyTLOS/GimpLikePhotoshop.git .gimp-2.8
+	git clone --depth=1 https://github.com/idbmb/MyTLOS.git .gimp-2.8
 
 #### via cmd:
 
 	# exit gimp first
 	cd %USERPROFILE%
 	ren .gimp-2.8 .gimp-2.8.backup
-	git clone --depth=1 https://github.com/idbmb/MyTLOS/GimpLikePhotoshop.git .gimp-2.8
+	git clone --depth=1 https://github.com/idbmb/MyTLOS.git .gimp-2.8

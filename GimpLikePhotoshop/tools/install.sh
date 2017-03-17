@@ -38,7 +38,7 @@ main() {
     exit 1
   fi
 
-  printf "${BLUE}Cloning GimpPs...${NORMAL}\n"
+  printf "${BLUE}Cloning Gimp Like Photoshop...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -52,8 +52,8 @@ main() {
     mv "$gimp_ps_directory" "$gimp_ps_directory.backup.$now"
   fi
 
-  env git clone --depth=1 https://github.com/idbmb/MyTLOS/GimpLikePhotoshop.git $gimp_ps_directory || {
-    printf "Error: git clone of GimpLikePhotoshop repo failed\n"
+  env git clone --depth=1 https://github.com/idbmb/MyTLOS.git $gimp_ps_directory || {
+    printf "Error: git clone of Gimp Like Photoshop repo failed\n"
     exit 1
   }
 
