@@ -312,3 +312,13 @@ pgAdmin III is a database design and management application for use with Postgre
 `sudo modprobe -r psmouse`
 
 `sudo modprobe psmouse proto=imps`
+
+
+**Get to default TeaLinuxOS lock screen After change the lock screen**
+
+`sudo nano -B /etc/lightdm/lightdm.conf`
+
+```
+[SeatDefaults]
+greeter-session=lightdm-gtk-greeter
+```
