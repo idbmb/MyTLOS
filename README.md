@@ -1,7 +1,7 @@
 # MyTLOS
 Repository for help me installing some important tools on my laptop, based on TeaLinuxOS 8.1 Peppermint 64-bit Build on Ubuntu 16.04 - http://tealinuxos.org/
 
-### Desktop Setting
+## Desktop Setting
 **[optional theme]**
 
 `sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"`
@@ -48,7 +48,7 @@ Command: cairo-dock &
 
 ------
 
-### Application
+## Application
 
 **BROWSER**
 
@@ -132,7 +132,7 @@ http://wps-community.org/downloads
 
 ------
 
-### WebDev Apps
+## WebDev Apps
 
 >**ATOM** - A hackable text editor for the 21st Century
 
@@ -303,7 +303,9 @@ pgAdmin III is a database design and management application for use with Postgre
 
 `sudo apt-get install filezilla`
 
-### Troubleshooting
+-------
+
+## Troubleshooting
 
 **If Touchpad not work normal**
 
