@@ -142,6 +142,28 @@ Open Terminal
 
 `convert -density 300 file.pdf file.jpg`
 
+**How To Screenshot My Login Screen**
+
+TAKE SCREENSHOT OF LOGIN SCREEN IN **TeaLinuxOS**
+
+Create a new file, preferably in your Home directory. Name it **screenshot.sh** or anything you like. Add the following lines in this file:
+
+```
+chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd
+
+```
+You must give the script execution rights:
+
+`sudo chmod +x screenshot.sh`
+
+Now when everything is ready, log out of the system. Press Ctrl+Alt+F1 at the login screen to go console mode. Login with your user credential. Run the screenshot script like this:
+
+`sudo ./screenshot.sh`
+
+Once the script is run, it will take you back to login screen graphical interface (chvt 7) and after five seconds it will take and save the screenshot in your home directory with a file name screenshot.png.
+
+[References](https://itsfoss.com/screenshot-login-screen-ubuntu-linux/)
+
 
 ------
 
