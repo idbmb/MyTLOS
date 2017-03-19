@@ -130,6 +130,19 @@ i'm used WPS Offices
 
 http://wps-community.org/downloads
 
+### Etc
+
+**gscan2pdf**
+
+gscan2pdf can control regular or sheet-fed (ADF) scanners with SANE via libsane-perl, scanimage or scanadf, and can scan multiple pages at once. It presents a thumbnail view of scanned pages, and permits simple operations such as cropping, rotating and deleting pages.
+
+**To Convert PDF To JPG**
+
+Open Terminal
+
+`convert -density 300 file.pdf file.jpg`
+
+
 ------
 
 ## WebDev Apps
