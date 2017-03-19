@@ -326,6 +326,31 @@ pgAdmin III is a database design and management application for use with Postgre
 
 `sudo modprobe psmouse proto=imps`
 
+**if after reboot not working**
+
+Here is something that fixed touchpad issues for me on some Dell Latitude e6220 laptops with TeaLinuxOS 8.1 versions.
+
+`sudo mkdir /etc/X11/xorg.conf.d`
+
+`cd /usr/share/X11/xorg.conf.d`
+
+`sudo cp 50-synaptics.conf /etc/X11/xorg.conf`
+
+`sudo cp 50-synaptics.conf /etc/X11/xorg.conf.d`
+
+`cd /etc/X11/xorg.conf.d`
+
+`sudo pico 50-synaptics.conf`
+
+under the line saying "MatchDevicePath "/dev/input/event*" in the first "InputClass" section, insert these two lines:
+
+```
+# Enable ClickPad to fix drag/drop on some laptop models
+Option    "ClickPad"   "1"
+
+```
+
+Save and exit editor and than reboot
 
 **Get to default TeaLinuxOS lock screen After change the lock screen**
 
