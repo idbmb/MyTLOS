@@ -335,3 +335,21 @@ pgAdmin III is a database design and management application for use with Postgre
 [SeatDefaults]
 greeter-session=lightdm-gtk-greeter
 ```
+
+**Sometimes fails to sleep**
+
+To fix, try installing a new kernel.
+
+Open your terminal then just copy paste the command
+
+```
+cd /tmp
+
+wget \
+kernel.ubuntu.com/~kernel-ppa/mainline/v4.5.2-wily/linux-headers-4.5.2-040502_4.5.2-040502.201604200335_all.deb \
+kernel.ubuntu.com/~kernel-ppa/mainline/v4.5.2-wily/linux-headers-4.5.2-040502-generic_4.5.2-040502.201604200335_amd64.deb \
+kernel.ubuntu.com/~kernel-ppa/mainline/v4.5.2-wily/linux-image-4.5.2-040502-generic_4.5.2-040502.201604200335_amd64.deb
+
+sudo dpkg -i linux-headers-4.5*.deb linux-image-4.5*.deb
+
+```
