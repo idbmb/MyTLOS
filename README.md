@@ -338,6 +338,14 @@ pgAdmin III is a database design and management application for use with Postgre
 
 `sudo apt-get install filezilla`
 
+**Android Studio**
+
+https://developer.android.com/studio/index.html
+
+Solved : Unable to run mksdcard SDK tool.
+
+`sudo apt-get install lib32z1 lib32ncurses5 lib32stdc++6`
+
 -------
 
 ## Troubleshooting
