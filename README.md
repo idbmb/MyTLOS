@@ -350,6 +350,8 @@ Solved : Unable to run mksdcard SDK tool.
 
 https://www.apachefriends.org/download.html
 
+`sudo chmod +x xampp-linux-x64-7.1.1-0-installer.run`
+
 `sudo ./xampp-linux-x64-7.1.1-0-installer.run`
 
 `cd /opt/lampp`
