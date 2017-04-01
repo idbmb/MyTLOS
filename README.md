@@ -346,6 +346,34 @@ Solved : Unable to run mksdcard SDK tool.
 
 `sudo apt-get install lib32z1 lib32ncurses5 lib32stdc++6`
 
+**Xampp**
+
+https://www.apachefriends.org/download.html
+
+`sudo ./xampp-linux-x64-7.1.1-0-installer.run`
+
+`cd /opt/lampp`
+
+`sudo ./manager-linux-x64.run`
+
+Create Shortcut
+
+`sudo gedit /usr/share/applications/xampp-control-panel.desktop`
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=XAMPP Control Panel
+Comment=Start and Stop XAMPP
+Exec=gksudo /opt/lampp/manager-linux-x64.run
+Icon=/opt/lampp/htdocs/favicon.ico
+Categories=Application
+Type=Application
+Terminal=false
+```
+
+`sudo apt-get update`
+
 -------
 
 ## Troubleshooting
