@@ -179,6 +179,7 @@ https://atom.io/
 - terminal-fusion
 - minimap
 - logo-file-icons
+- color-picker
 
 ```
 bambang@idbmb  ~/fonts/DejaVuSansMono   master ●  sudo mv DejaVu\ Sans\ Mono\ for\ Powerline.ttf /home/bambang/.fonts/
