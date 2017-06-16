@@ -439,3 +439,9 @@ kernel.ubuntu.com/~kernel-ppa/mainline/v4.5.2-wily/linux-image-4.5.2-040502-gene
 sudo dpkg -i linux-headers-4.5*.deb linux-image-4.5*.deb
 
 ```
+
+## Permission
+
+Directory permissions change "directory" and all of its contents.
+
+`chmod 777 -R /directory`
