@@ -167,18 +167,20 @@ Once the script is run, it will take you back to login screen graphical interfac
 
 **Google Earth**
 
-`cd /tmp
+```
+cd /tmp
 mkdir google-earth && cd google-earth
 wget http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb-invalid-mta_4.1+Debian11ubuntu8_all.deb
 wget http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb-security_4.1+Debian11ubuntu8_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb-core_4.1+Debian11ubuntu8_amd64.deb
 sudo dpkg -i *.deb
-sudo apt -f install`
+sudo apt -f install
+```
 
 
 `sudo apt-get install -f`
 
-Download Google earth 
+Download Google earth
 
 https://www.google.com/earth/download/gep/agree.html
 
