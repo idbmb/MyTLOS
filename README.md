@@ -460,6 +460,7 @@ sudo dpkg -i linux-headers-4.5*.deb linux-image-4.5*.deb
 
 ```
 
+**NEW UPDATE from ELementary**
 
 !!!!!!!!This is Not the oficial build!!!!!Do Not post Bugs
 *******If u want to see the OS skip at 8:34******
@@ -500,6 +501,11 @@ sudo apt-get remove --purge libgranite-common pantheon* elementary*
 sudo apt-get autoremove
 sudo apt-get dist-upgrade
 ```
+**About Grub**
+
+Mengecek Menu entry di `/boot/grub/grub.cfg`
+Mengedit Default Grub di `/etc/default/grub`
+melakukan update grub dengan perintah `sudo grub-update`
 
 ## Permission
 
