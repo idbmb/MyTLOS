@@ -460,6 +460,47 @@ sudo dpkg -i linux-headers-4.5*.deb linux-image-4.5*.deb
 
 ```
 
+
+!!!!!!!!This is Not the oficial build!!!!!Do Not post Bugs
+*******If u want to see the OS skip at 8:34******
+U need Ubuntu 16.04
+
+First step!
+
+-------Terminal script--------
+```
+sudo add-apt-repository ppa:elementary-os/daily
+sudo add-apt-repository ppa:elementary-os/testing
+sudo add-apt-repository ppa:elementary-os/os-patches
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install elementary-desktop
+
+```
+
+Second Step!
+
+Log out
+Will leave the current session and we log in to our new Pantheon session.
+
+
+To uninstall it will not be so easy
+
+1) Enter your ubuntu session and change the default theme Ambiance your desktop for example.
+2) Enter a terminal.
+3) Type in the same:
+
+-------Terminal script--------
+```
+sudo add-apt-repository -r ppa:elementary-os/daily
+sudo add-apt-repository -r ppa:elementary-os/testing
+sudo add-apt-repository -r ppa:elementary-os/os-patches
+sudo apt-get update
+sudo apt-get remove --purge libgranite-common pantheon* elementary*
+sudo apt-get autoremove
+sudo apt-get dist-upgrade
+```
+
 ## Permission
 
 Directory permissions change "directory" and all of its contents.
