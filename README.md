@@ -196,7 +196,7 @@ https://atom.io/
 **Packages for Atom**
 
 - open-terminal-here
-- terminal-plus
+- vk-terminal
 - minimap
 - logo-file-icons
 - color-picker
